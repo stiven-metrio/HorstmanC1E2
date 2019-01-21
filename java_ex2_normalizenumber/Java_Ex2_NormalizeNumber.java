@@ -8,6 +8,7 @@
  */
 package java_ex2_normalizenumber;
 
+import static java.lang.Math.floorMod;
 import java.util.Scanner;
 
 /**
@@ -25,8 +26,8 @@ public class Java_Ex2_NormalizeNumber {
         System.out.print("Enter an integer value: ");
         int value = scan.nextInt();
         
-        // Normalize angle using % operator
-        int remainder = value % 360;
+        int remainder = value % 360; // Normalize angle using % operator
+        //int remainder = floorMod(value,360); // Normalize angle using floorMod
         int quotient = value / 360;
         System.out.println(remainder);
         System.out.println(quotient);
