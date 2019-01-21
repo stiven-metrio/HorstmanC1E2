@@ -28,9 +28,6 @@ public class Java_Ex2_NormalizeNumber {
         
         int remainder = value % 360; // Normalize angle using % operator
         //int remainder = floorMod(value,360); // Normalize angle using floorMod
-        int quotient = value / 360;
-        System.out.println(remainder);
-        System.out.println(quotient);
         
         int angle = 0;
         if(value >= 0)
