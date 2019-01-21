@@ -34,7 +34,8 @@ public class Java_Ex2_NormalizeNumber {
         int angle = 0;
         if(value >= 0)
             angle = value-quotient*360;
-        if(value < 0);
+        if(value < 0)
+            angle = (360+value)-quotient*360;;
         System.out.printf("Angle: %d%n",angle);
     }
     
